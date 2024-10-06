@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>imdtho - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+            font-family: 'Poppins', sans-serif;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3.5rem;
+            color: #A52A2A; /* Maroon/Cardinal Red */
+            margin-bottom: 20px;
+            letter-spacing: 1.5px;
+        }
+        p {
+            font-size: 1.3rem;
+            color: #800000; /* Dark Maroon */
+            margin-bottom: 40px;
+        }
+        .coming-soon {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #fff;
+            background-color: #A52A2A; /* Maroon/Cardinal Red */
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .coming-soon:hover {
+            background-color: #800000; /* Darker Maroon */
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.9rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>IM D THO</h1>
+        <p>Aye something cool is coming soon. Are you d?</p>
+        <button class="coming-soon" onclick="location.reload()">Stay Tuned!</button>
+    </div>
+    <footer>
+        &copy; 2024 IMDTHO
+    </footer>
+</body>
+</html>
