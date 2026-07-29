@@ -358,7 +358,7 @@ main { flex: 1 0 auto; }
   padding: clamp(24px, 3vw, 36px);
   display: flex;
   gap: clamp(18px, 2.5vw, 26px);
-  align-items: center;
+  align-items: flex-start;
 }
 .home-person__photo {
   width: clamp(104px, 16vw, 152px);
@@ -373,7 +373,10 @@ main { flex: 1 0 auto; }
 .home-person__name { font-size: var(--step-1); font-weight: 600; letter-spacing: var(--tracking-tight); line-height: 1.1; }
 .home-person__role { color: var(--burgundy-700); font-size: var(--step--1); margin: 8px 0 14px; display: grid; gap: 2px; line-height: 1.3; }
 .home-person__role span { display: block; }
-@media (max-width: 560px) { .home-person { flex-direction: column; align-items: flex-start; } }
+@media (max-width: 560px) {
+  .home-person { gap: 16px; padding: 22px; }
+  .home-person__photo { width: 92px; }
+}
 
 /* --- Poster CTA band (the sanctioned burgundy full-bleed moment) ---------- */
 .poster {
@@ -577,6 +580,7 @@ main { flex: 1 0 auto; }
 .stack-lg { display: grid; gap: 32px; }
 .section-head { margin-bottom: clamp(32px, 4vw, 56px); max-width: 60ch; }
 .section-head h2 { margin-bottom: 16px; }
+.section-head--wide { max-width: none; }
 .section-head p { color: var(--ink); font-size: var(--step-1); line-height: 1.4; }
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
