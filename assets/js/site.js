@@ -106,7 +106,7 @@
         '<div class="footer__top">' +
           '<div class="footer__brand">' +
             '<a class="nav__brand" href="index.html" aria-label="imdtho home">' + MARK + wordmark() + "</a>" +
-            "<p>Two operators raising to buy an established company and run it for the long haul. Always down.</p>" +
+            "<p>Two operators looking to buy an established company and run it for the long haul. Always down.</p>" +
           "</div>" +
           '<div class="footer__nav">' +
             '<div class="footer__col">' +
@@ -118,8 +118,8 @@
             '<div class="footer__col">' +
               "<h4>Connect</h4>" +
               '<a href="mailto:hello@imdtho.com">hello@imdtho.com</a>' +
-              '<a href="https://www.linkedin.com/in/zuhayerquazi" target="_blank" rel="noopener">Zuhayer on LinkedIn</a>' +
               '<a href="https://www.linkedin.com/in/patelshivam845" target="_blank" rel="noopener">Shivam on LinkedIn</a>' +
+              '<a href="https://www.linkedin.com/in/zuhayerquazi" target="_blank" rel="noopener">Zuhayer on LinkedIn</a>' +
             "</div>" +
           "</div>" +
         "</div>" +
