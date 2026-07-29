@@ -1,0 +1,36 @@
+/* imdtho brand tokens */
+:root {
+  /* color — burgundy on white. Mostly ink on white; burgundy is the accent. */
+  --burgundy-100: #FAF0F1;
+  --burgundy-200: #F0D8DB;
+  --burgundy-300: #DFAFB6;
+  --burgundy-400: #B85F6E;
+  --burgundy-500: #6F1D2B; /* base — the brand burgundy */
+  --burgundy-600: #5C1723;
+  --burgundy-700: #4A121D; /* accent text at paragraph sizes */
+  --burgundy-800: #380D16;
+  --burgundy-900: #26080F;
+  --ink: #201E1D;
+  --white: #FFFFFF;
+
+  /* type — Archivo everywhere (Google Fonts), modern grotesque */
+  --font-brand: 'Archivo', -apple-system, sans-serif;
+  --tracking-tight: -0.03em; /* wordmark + display headings */
+
+  /* structure — flat, zero radius, strong 2px rules */
+  --radius: 0px;
+  --rule: 2px solid var(--ink);
+  --rule-accent: 2px solid var(--burgundy-500);
+}
+
+/* wordmark as live text (preferred on the web) */
+.imdtho-wordmark {
+  font-family: var(--font-brand);
+  font-weight: 600;
+  letter-spacing: var(--tracking-tight);
+  text-transform: lowercase;
+  color: var(--ink);
+  line-height: 1;
+}
+.imdtho-lockup { display: inline-flex; align-items: center; gap: 0.47em; }
+.imdtho-lockup .imdtho-wordmark { font-size: 0.77em; } /* mark height = 1em */
