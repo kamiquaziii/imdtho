@@ -13,7 +13,7 @@
 
   var CONFIG = {
     // Paste the "/exec" URL from your Apps Script deployment here:
-    endpoint: "" // e.g. "https://script.google.com/macros/s/AKfy.../exec"
+    endpoint: "https://script.google.com/macros/s/AKfycbytMlbNptfAnONfHEi7_MLLE7wgtBolXGwvD87sdY0P2Vp3SOLNPwuhj_Q2vrvO4Msu/exec"
   };
 
   var form = document.getElementById("contact-form");
