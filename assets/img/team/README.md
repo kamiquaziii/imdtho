@@ -1,20 +1,16 @@
 # Team headshots
 
-Drop the two headshots here, then wire them into `team.html`:
+Both headshots are already wired in:
 
-| File | Used for |
+| File | Used on |
 |---|---|
-| `zuhayer.jpg` | Zuhayer Quazi's profile |
-| `shivam.jpg` | Shivam Patel's profile |
+| `zuhayer.jpg` | Our Team profile + homepage "Who we are" |
+| `shivam.jpg` | Our Team profile + homepage "Who we are" |
 
-In `team.html`, replace the placeholder block inside each `.profile__photo` with:
-
-```html
-<img src="assets/img/team/zuhayer.jpg" alt="Zuhayer Quazi">
-```
+To swap either photo, just replace the file here (keep the same filename).
 
 Notes:
-- Aspect ratio is **4:5** (portrait). Roughly 800×1000px or larger looks crisp.
-- The site renders photography in **black & white** automatically (brand rule) —
+- Portrait crops best. Roughly 800x1000px or larger looks crisp.
+- The site renders photography in **black & white** automatically (brand rule):
   a `grayscale(100%)` filter is applied, so color photos are fine.
 - Keep files reasonably small (< ~300KB each) for fast loads.

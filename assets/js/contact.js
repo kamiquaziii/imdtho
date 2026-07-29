@@ -1,5 +1,5 @@
 /* ==========================================================================
-   imdtho — contact form
+   imdtho · contact form
    Validates, then POSTs the submission to a Google Sheet via a Google Apps
    Script Web App. See assets/backend/google-apps-script.gs for the backend
    and the step-by-step setup at the bottom of that file.
@@ -86,7 +86,7 @@
   function onSuccess() {
     form.reset();
     Object.keys(RULES).forEach(function (name) { setFieldError(name, ""); });
-    showStatus("success", "Thanks — your message is in. We’ll get back to you within a day or two.");
+    showStatus("success", "Thanks! Your message is in. We’ll get back to you within a day or two.");
   }
 
   form.addEventListener("submit", function (e) {
@@ -99,7 +99,7 @@
     var data = payload();
     setSending(true);
 
-    // Stub mode — no endpoint configured yet.
+    // Stub mode: no endpoint configured yet.
     if (!CONFIG.endpoint) {
       // eslint-disable-next-line no-console
       console.warn("[imdtho] Contact form is in STUB mode (no endpoint set). Payload:", data);

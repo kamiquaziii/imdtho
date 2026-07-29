@@ -1,5 +1,5 @@
 /* ==========================================================================
-   imdtho — shared shell (nav + footer)
+   imdtho · shared shell (nav + footer)
    Single source of truth for the site header and footer. Each page includes
    <header id="site-header"></header> and <footer id="site-footer"></footer>;
    this script fills them and wires the mobile menu + active-page state.
@@ -17,8 +17,7 @@
 
   var LINKS = [
     { href: "index.html", label: "Home" },
-    { href: "team.html", label: "Our Team" },
-    { href: "contact.html", label: "Contact" }
+    { href: "team.html", label: "Our Team" }
   ];
 
   // Which page are we on? Normalise "/", "", "index.html" → index.html
@@ -45,7 +44,7 @@
     host.innerHTML =
       '<div class="container">' +
         '<nav class="nav" aria-label="Primary">' +
-          '<a class="nav__brand" href="index.html" aria-label="imdtho — home">' +
+          '<a class="nav__brand" href="index.html" aria-label="imdtho home">' +
             MARK + wordmark() +
           "</a>" +
           '<button class="nav__toggle" type="button" aria-expanded="false" aria-controls="primary-nav">' +
@@ -55,7 +54,7 @@
           "</button>" +
           '<ul class="nav__links" id="primary-nav">' +
             items +
-            '<li><a class="btn nav__cta" href="contact.html">Get in touch' +
+            '<li><a class="btn nav__cta" href="contact.html"' + (here === "contact.html" ? ' aria-current="page"' : "") + ">Get in touch" +
               '<svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>' +
             "</a></li>" +
           "</ul>" +
@@ -106,8 +105,8 @@
       '<div class="container">' +
         '<div class="footer__top">' +
           '<div class="footer__brand">' +
-            '<a class="nav__brand" href="index.html" aria-label="imdtho — home">' + MARK + wordmark() + "</a>" +
-            "<p>A search fund on the hunt for one great company to buy, hold, and run for the long term. Always down.</p>" +
+            '<a class="nav__brand" href="index.html" aria-label="imdtho home">' + MARK + wordmark() + "</a>" +
+            "<p>Two operators raising to buy an established company and run it for the long haul. Always down.</p>" +
           "</div>" +
           '<div class="footer__nav">' +
             '<div class="footer__col">' +

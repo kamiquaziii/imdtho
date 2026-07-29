@@ -1,5 +1,5 @@
 /* ==========================================================================
-   imdtho — site styles
+   imdtho · site styles
    Built on assets/brand/tokens.css. Brand rules (see assets/brand/BRAND.md):
    burgundy + white + ink · Archivo everywhere · flush left · zero radius ·
    flat (no gradients/shadows) · strong 2px rules · burgundy used sparingly.
@@ -13,7 +13,7 @@
 
   --rule-soft: 2px solid var(--burgundy-200);
 
-  /* type scale — Archivo, flush left, tight tracking at display sizes */
+  /* type scale: Archivo, flush left, tight tracking at display sizes */
   --step--1: clamp(0.82rem, 0.79rem + 0.15vw, 0.9rem);
   --step-0:  clamp(1rem, 0.96rem + 0.2vw, 1.125rem);
   --step-1:  clamp(1.2rem, 1.1rem + 0.5vw, 1.5rem);
@@ -54,7 +54,7 @@ img { height: auto; }
 
 a { color: inherit; }
 
-/* Headings — flush left, tight tracking, 600–700 */
+/* Headings: flush left, tight tracking, 600-700 */
 h1, h2, h3, h4 {
   font-weight: 700;
   line-height: 1.04;
@@ -117,7 +117,7 @@ main { flex: 1 0 auto; }
   background:
     linear-gradient(var(--burgundy-500) 0 0) 0 0 / 8px 8px no-repeat,
     linear-gradient(var(--burgundy-500) 0 0) 7px 0 / 8px 8px no-repeat;
-  /* two little squares stepping — flat, no radius */
+  /* two little squares stepping, flat, no radius */
 }
 
 .lede {
@@ -130,7 +130,7 @@ main { flex: 1 0 auto; }
 
 .measure { max-width: 62ch; }
 
-/* --- Buttons — flush-left labels, zero radius, flat ----------------------- */
+/* --- Buttons: flush-left labels, zero radius, flat ------------------------ */
 .btn {
   --btn-bg: var(--burgundy-500);
   --btn-fg: var(--white);
@@ -316,7 +316,7 @@ main { flex: 1 0 auto; }
 
 /* --- Generic grids -------------------------------------------------------- */
 .grid { display: grid; gap: 2px; background: var(--ink); border: var(--rule); }
-/* grid with hairline 2px cell rules — "let the grid show" */
+/* grid with hairline 2px cell rules, "let the grid show" */
 .grid > * { background: var(--white); }
 
 .cols-3 { grid-template-columns: repeat(3, 1fr); }
@@ -352,6 +352,28 @@ main { flex: 1 0 auto; }
 @media (min-width: 700px) {
   .deflist--2 { grid-template-columns: 1fr 1fr; }
 }
+
+/* --- Home: meet the operators (compact square photos) --------------------- */
+.home-person {
+  padding: clamp(24px, 3vw, 36px);
+  display: flex;
+  gap: clamp(18px, 2.5vw, 26px);
+  align-items: center;
+}
+.home-person__photo {
+  width: clamp(104px, 16vw, 152px);
+  aspect-ratio: 1 / 1;
+  flex: 0 0 auto;
+  border: var(--rule);
+  background: var(--burgundy-100);
+  overflow: hidden;
+  filter: grayscale(100%);   /* brand: photography prints B&W */
+}
+.home-person__photo img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; filter: grayscale(100%); }
+.home-person__name { font-size: var(--step-1); font-weight: 600; letter-spacing: var(--tracking-tight); line-height: 1.1; }
+.home-person__role { color: var(--burgundy-700); font-size: var(--step--1); margin: 8px 0 14px; display: grid; gap: 2px; line-height: 1.3; }
+.home-person__role span { display: block; }
+@media (max-width: 560px) { .home-person { flex-direction: column; align-items: flex-start; } }
 
 /* --- Poster CTA band (the sanctioned burgundy full-bleed moment) ---------- */
 .poster {
